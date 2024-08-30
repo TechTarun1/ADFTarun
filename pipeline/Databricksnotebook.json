@@ -36,6 +36,8 @@
 			{
 				"name": "ForEach1",
 				"type": "ForEach",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Read CSV",
@@ -96,7 +98,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@equals(item().isActive,1)",
+						"value": "@equals(int(item().isActive),1)",
 						"type": "Expression"
 					}
 				}
