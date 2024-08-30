@@ -1,0 +1,23 @@
+{
+	"name": "tarun3ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"file": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "tarun3"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

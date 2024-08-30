@@ -1,0 +1,104 @@
+{
+	"name": "DelimitedText3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "tarun2"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "visit_id",
+				"type": "String"
+			},
+			{
+				"name": "visit_start_date",
+				"type": "String"
+			},
+			{
+				"name": "visit_end_date",
+				"type": "String"
+			},
+			{
+				"name": "visit_cost",
+				"type": "String"
+			},
+			{
+				"name": "procedure_code",
+				"type": "String"
+			},
+			{
+				"name": "procedure_desc",
+				"type": "String"
+			},
+			{
+				"name": "hospital_id",
+				"type": "String"
+			},
+			{
+				"name": "hospital",
+				"type": "String"
+			},
+			{
+				"name": "owner_id",
+				"type": "String"
+			},
+			{
+				"name": "first_name",
+				"type": "String"
+			},
+			{
+				"name": "last_name",
+				"type": "String"
+			},
+			{
+				"name": "email",
+				"type": "String"
+			},
+			{
+				"name": "address",
+				"type": "String"
+			},
+			{
+				"name": "city",
+				"type": "String"
+			},
+			{
+				"name": "postcode",
+				"type": "String"
+			},
+			{
+				"name": "pet_id",
+				"type": "String"
+			},
+			{
+				"name": "pet_name",
+				"type": "String"
+			},
+			{
+				"name": "species",
+				"type": "String"
+			},
+			{
+				"name": "breed",
+				"type": "String"
+			},
+			{
+				"name": "pet_dob",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

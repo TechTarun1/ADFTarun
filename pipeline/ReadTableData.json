@@ -1,0 +1,42 @@
+{
+	"name": "ReadTableData",
+	"properties": {
+		"activities": [
+			{
+				"name": "Read SQL Table Data",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"sqlReaderStoredProcedureName": "[dbo].[petcareparam]",
+						"storedProcedureParameters": {
+							"hospital_id": {
+								"type": "String",
+								"value": "86"
+							}
+						},
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "AzureSqlTable2",
+						"type": "DatasetReference"
+					},
+					"firstRowOnly": false
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-08-20T14:42:49Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

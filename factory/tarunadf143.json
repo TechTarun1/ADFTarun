@@ -1,0 +1,9 @@
+{
+	"name": "tarunadf143",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a53925e9-bae5-4e9b-8c07-0744eecab449",
+		"tenantId": "0847decf-4ea8-4c30-a258-e367b78b9c69"
+	}
+}

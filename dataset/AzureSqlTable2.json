@@ -1,0 +1,106 @@
+{
+	"name": "AzureSqlTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "visit_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "visit_start_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "visit_end_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "visit_cost",
+				"type": "nvarchar"
+			},
+			{
+				"name": "procedure_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "procedure_desc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "hospital_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "hospital",
+				"type": "nvarchar"
+			},
+			{
+				"name": "owner_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "first_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "last_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "email",
+				"type": "nvarchar"
+			},
+			{
+				"name": "address",
+				"type": "nvarchar"
+			},
+			{
+				"name": "city",
+				"type": "nvarchar"
+			},
+			{
+				"name": "postcode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pet_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pet_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "species",
+				"type": "nvarchar"
+			},
+			{
+				"name": "breed",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pet_dob",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FilePath",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Date Processed",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "petcare"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
