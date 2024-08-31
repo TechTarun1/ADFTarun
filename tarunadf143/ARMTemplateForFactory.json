@@ -2086,7 +2086,7 @@
 							"scripts": [
 								{
 									"type": "Query",
-									"text": "select * from dbo.petcare;"
+									"text": "select * from dbo.petcare_tmp;"
 								}
 							],
 							"scriptBlockExecutionTimeout": "02:00:00"
