@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "tarunadf143"
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureDatabricksLS_accessToken": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"source_connectionString": {
+			"value": ""
+		},
+		"AzureDatabricksLS_properties_typeProperties_existingClusterId": {
+			"value": "0829-051939-nxcltgu0"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "tarun5389.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "test"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "tarun"
+		}
+	}
+}
